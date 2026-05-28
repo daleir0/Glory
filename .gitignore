@@ -1,0 +1,18 @@
+# Claude Code & agent tooling (session data, not project files)
+.agent/
+.claude/
+.claude-flow/
+.claude-launcher/
+.hermes-inspect/
+.swarm/
+
+# Local-only Claude context files
+CLAUDE.local.md
+
+# Obsidian auto-generated workspace state
+Glory's Intellect/.obsidian/workspace.json
+Glory's Intellect/.obsidian/graph.json
+
+# Nested repos and extracted packages (not part of this project)
+autoresearch/
+claude-mem-12.1.0/
