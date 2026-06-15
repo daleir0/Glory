@@ -1,0 +1,37 @@
+# Claude Code & agent tooling (session data, not project files)
+.agent/
+.claude/
+.claude-flow/
+.claude-launcher/
+.hermes-inspect/
+.swarm/
+
+# Local-only Claude context files
+CLAUDE.local.md
+
+# Obsidian auto-generated workspace state
+Glory's Intellect/.obsidian/workspace.json
+Glory's Intellect/.obsidian/graph.json
+
+# Nested repos and extracted packages (not part of this project)
+autoresearch/
+claude-mem-12.1.0/
+
+# Vendored / external tooling — not Glory source, keep out of the code graph
+tmux/
+Antigravity/
+Qwen/
+
+# Secrets — never commit decrypted material or local keys
+*.glory
+*.key
+*.pem
+.env
+.env.*
+secrets.*
+
+# Python build artifacts
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/

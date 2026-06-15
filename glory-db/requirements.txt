@@ -1,0 +1,3 @@
+# GloryDB depends on the glory-core building block (sibling dir E:\Glory\glory-core).
+# glory-core brings: cryptography>=48.0.0, argon2-cffi>=25.1.0
+pytest>=8.0.0

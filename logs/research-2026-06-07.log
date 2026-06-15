@@ -1,0 +1,21 @@
+﻿=== Glory Research Agent: 2026-06-07 ===
+Started: 10:49:18
+Committed `a9653538`.
+
+Researched **MoE expert offloading in llama.cpp** ΓÇö pinning attention/shared weights to GPU and offloading routed FFN experts to CPU (`-ot "\.ffn_.*_exps\.weight=CPU"` / `--n-cpu-moe`), the exact lever that lets Glory run Kimi-K2.6-class MoE on the 16GB 3060 (verified: 141GB MiniMax went 5.7ΓåÆ16.7 tok/s by offloading only experts). File: `E:\Glory\Glory's Intellect\05 - Research\AI\2026-06-07-moe-expert-offloading-llama-cpp.md`
+Exit code: 0
+git : remote: 
+At E:\Glory\scripts\push-to-github.ps1:36 char:19
++     $pushOutput = git -C $tmpDir push --force origin main 2>&1
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (remote: :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+remote: GitHub found 1 vulnerability on losinglory/Glory's default branch (1 moderate). To find out more, visit:       
+ 
+remote:      https://github.com/losinglory/Glory/security/dependabot/1        
+remote: 
+To https://github.com/losinglory/Glory.git
+ + 32b74a4...7829f58 main -> main (forced update)
+Pushed to GitHub: research: auto-sync 2026-06-07
+Finished: 10:57:02

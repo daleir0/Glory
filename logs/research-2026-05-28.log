@@ -1,0 +1,14 @@
+﻿=== Glory Research Agent: 2026-05-28 ===
+Started: 10:56:15
+Researched **speculative decoding for local LLM inference** (draft-then-verify, 2ΓÇô3x speedup, LM Studio 0.3.10 native support, Qwen3-0.6BΓåÆQwen3-8B as the best pair for Glory's RTX 3060 stack) ΓåÆ `Glory's Intellect/05 - Research/AI/2026-05-28-speculative-decoding-local-inference.md`
+Exit code: 0
+git : To https://github.com/losinglory/Glory.git
+At E:\Glory\scripts\push-to-github.ps1:36 char:19
++     $pushOutput = git -C $tmpDir push --force origin main 2>&1
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (To https://gith...glory/Glory.git:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+ + e2020ed...59e3d85 main -> main (forced update)
+Pushed to GitHub: research: auto-sync 2026-05-28
+Finished: 11:00:16
