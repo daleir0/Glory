@@ -1,0 +1,19 @@
+﻿=== Glory Research Agent: 2026-05-29 ===
+Started: 06:00:02
+Researched: **KV cache quantization** ΓÇö keys tolerate low-bit (per-channel) far better than values (per-token); Q8_0/Q8_0 symmetric is near-free quality AND keeps the fused Flash Attention path, roughly doubling context on the RTX 3060. File: `E:\Glory\Glory's Intellect\05 - Research\AI\2026-05-29-kv-cache-quantization.md` (committed as `17e9782e`).
+Exit code: 0
+git : remote: 
+At E:\Glory\scripts\push-to-github.ps1:36 char:19
++     $pushOutput = git -C $tmpDir push --force origin main 2>&1
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (remote: :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+remote: GitHub found 1 vulnerability on losinglory/Glory's default branch (1 moderate). To find out more, visit:       
+ 
+remote:      https://github.com/losinglory/Glory/security/dependabot/1        
+remote: 
+To https://github.com/losinglory/Glory.git
+ + 59e3d85...0d1bad2 main -> main (forced update)
+Pushed to GitHub: research: auto-sync 2026-05-29
+Finished: 06:03:28

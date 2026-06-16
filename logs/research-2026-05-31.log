@@ -1,0 +1,19 @@
+﻿=== Glory Research Agent: 2026-05-31 ===
+Started: 10:25:15
+Researched **GBNF grammar-constrained decoding in llama.cpp** ΓÇö guaranteeing structurally-valid JSON from local models, with three production gotchas (thinking bypasses enforcement, fail-open on bad grammar, `x? x? x?` blowups) that directly inform Glory's HYPE structured-extraction pipeline ΓåÆ `E:\Glory\Glory's Intellect\05 - Research\AI\2026-05-31-gbnf-grammar-constrained-decoding.md` (committed `8af481dc`).
+Exit code: 0
+git : remote: 
+At E:\Glory\scripts\push-to-github.ps1:36 char:19
++     $pushOutput = git -C $tmpDir push --force origin main 2>&1
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (remote: :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+remote: GitHub found 1 vulnerability on losinglory/Glory's default branch (1 moderate). To find out more, visit:       
+ 
+remote:      https://github.com/losinglory/Glory/security/dependabot/1        
+remote: 
+To https://github.com/losinglory/Glory.git
+ + 24a00bf...29801cd main -> main (forced update)
+Pushed to GitHub: research: auto-sync 2026-05-31
+Finished: 10:31:14
