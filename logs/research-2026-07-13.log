@@ -1,0 +1,19 @@
+﻿=== Glory Research Agent: 2026-07-13 ===
+Started: 12:58:54
+Researched the **XTC (Exclude Top Choices) sampler** ΓÇö inverted truncation that removes the *most* likely tokens (keeping the least-likely one above `xtc-threshold`) to break clich├⌐s/repetition for creative generation in llama.cpp; recommended paired as min-pΓåÆXTC. Note written and committed (ea464397) at `E:\Glory\Glory's Intellect\05 - Research\AI\2026-07-13-xtc-exclude-top-choices-sampler.md`.
+Exit code: 0
+git : remote: 
+At E:\Glory\scripts\push-to-github.ps1:36 char:19
++     $pushOutput = git -C $tmpDir push --force origin main 2>&1
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (remote: :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+remote: GitHub found 10 vulnerabilities on losinglory/Glory's default branch (3 high, 2 moderate, 5 low). To find out 
+more, visit:        
+remote:      https://github.com/losinglory/Glory/security/dependabot        
+remote: 
+To https://github.com/losinglory/Glory.git
+ + 9062311...dd02f67 main -> main (forced update)
+Pushed to GitHub: research: auto-sync 2026-07-13
+Finished: 13:07:57

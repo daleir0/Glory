@@ -1,0 +1,21 @@
+﻿=== Glory Research Agent: 2026-07-05 ===
+Started: 13:10:06
+Researched: **CUDA Sysmem Fallback Policy** ΓÇö the Windows NVIDIA driver (536.40+) silently spills VRAM overflow to system RAM over PCIe instead of throwing OOM, which is the classic cause of a mid-session 10ΓÇô20x token/s collapse on the RTX 3060 as KV cache growth pushes past 12GB; the fix is per-app "Prefer No Sysmem Fallback" in NVIDIA Control Panel. ΓåÆ `E:\Glory\Glory's Intellect\05 - Research\Hardware\2026-07-05-cuda-sysmem-fallback-policy.md` (committed as `2d33a71c`, author `glory@research.session`).
+
+Sources: [NVIDIA support: System Memory Fallback](https://nvidia.custhelp.com/app/answers/detail/a_id/5490), [A1111 discussion #14077](https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/14077), [Why Ollama/llama.cpp crawl when models spill into RAM](https://www.popularai.org/p/why-ollama-and-llama-cpp-crawl-when-models-spill-into-ram-and-how-to-fix-it)
+Exit code: 0
+git : remote: 
+At E:\Glory\scripts\push-to-github.ps1:36 char:19
++     $pushOutput = git -C $tmpDir push --force origin main 2>&1
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (remote: :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+remote: GitHub found 10 vulnerabilities on losinglory/Glory's default branch (3 high, 2 moderate, 5 low). To find out 
+more, visit:        
+remote:      https://github.com/losinglory/Glory/security/dependabot        
+remote: 
+To https://github.com/losinglory/Glory.git
+ + fdf0798...8c593a7 main -> main (forced update)
+Pushed to GitHub: research: auto-sync 2026-07-05
+Finished: 13:20:17

@@ -1,0 +1,23 @@
+﻿=== Glory Research Agent: 2026-07-06 ===
+Started: 06:02:13
+Committed as `df33377e`.
+
+**Researched:** Gemma's interleaved sliding-window attention (5 local:1 global, 1024-token window ΓåÆ KV cache <15% overhead at 32K) and llama.cpp's `--swa-full` trade-off ΓÇö directly actionable for our live Gemma-4-e4b/Hermes stack on the RTX 3060. ΓåÆ `E:\Glory\Glory's Intellect\05 - Research\AI\2026-07-06-gemma-interleaved-sliding-window-attention.md`
+
+Sources: [Gemma 3 Technical Report](https://arxiv.org/pdf/2503.19786) ┬╖ [llama.cpp SWA PR #13194](https://github.com/ggml-org/llama.cpp/pull/13194) ┬╖ [llama-server KV-reuse tutorial](https://github.com/ggml-org/llama.cpp/discussions/13606) ┬╖ [LM Studio SWA VRAM bug #1129](https://github.com/lmstudio-ai/lmstudio-bug-tracker/issues/1129)
+Exit code: 0
+git : remote: 
+At E:\Glory\scripts\push-to-github.ps1:36 char:19
++     $pushOutput = git -C $tmpDir push --force origin main 2>&1
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (remote: :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+remote: GitHub found 10 vulnerabilities on losinglory/Glory's default branch (3 high, 2 moderate, 5 low). To find out 
+more, visit:        
+remote:      https://github.com/losinglory/Glory/security/dependabot        
+remote: 
+To https://github.com/losinglory/Glory.git
+ + 8c593a7...f715571 main -> main (forced update)
+Pushed to GitHub: research: auto-sync 2026-07-06
+Finished: 06:12:19

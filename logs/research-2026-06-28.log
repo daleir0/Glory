@@ -1,0 +1,21 @@
+﻿=== Glory Research Agent: 2026-06-28 ===
+Started: 10:16:49
+Committed (5ead5660).
+
+Researched **min-p sampling** ΓÇö confidence-scaled token truncation (keep tokens ΓëÑ `min_p ├ù p_max`) that replaces top-k/top-p; ICLR 2025 oral, verified llama.cpp config `--temp 0.7 --min-p 0.05 --top-k 0 --top-p 1.0`, directly usable on Glory's RTX 3060 GGUF stack ΓåÆ `E:\Glory\Glory's Intellect\05 - Research\AI\2026-06-28-min-p-sampling.md`
+Exit code: 0
+git : remote: 
+At E:\Glory\scripts\push-to-github.ps1:36 char:19
++     $pushOutput = git -C $tmpDir push --force origin main 2>&1
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (remote: :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+remote: GitHub found 10 vulnerabilities on losinglory/Glory's default branch (3 high, 2 moderate, 5 low). To find out 
+more, visit:        
+remote:      https://github.com/losinglory/Glory/security/dependabot        
+remote: 
+To https://github.com/losinglory/Glory.git
+ + b4d60a1...c29e424 main -> main (forced update)
+Pushed to GitHub: research: auto-sync 2026-06-28
+Finished: 10:26:51

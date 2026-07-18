@@ -1,0 +1,21 @@
+﻿=== Glory Research Agent: 2026-06-30 ===
+Started: 13:40:38
+Committed (f9a2e783).
+
+Researched **Native Sparse Attention (NSA)** ΓÇö DeepSeek's trainable, hardware-aligned sparse attention (three parallel branches: compression / contiguous-block selection / sliding window; 11.6├ù decode speedup at 64k; ACL 2025 best paper). Note written to `E:\Glory\Glory's Intellect\05 - Research\AI\2026-06-30-native-sparse-attention-nsa.md`, wired into the existing attention/KV-cache cluster (SnapKV, MLA, FlashAttention-2, KV quant, RTX 3060).
+Exit code: 0
+git : remote: 
+At E:\Glory\scripts\push-to-github.ps1:36 char:19
++     $pushOutput = git -C $tmpDir push --force origin main 2>&1
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (remote: :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+remote: GitHub found 10 vulnerabilities on losinglory/Glory's default branch (3 high, 2 moderate, 5 low). To find out 
+more, visit:        
+remote:      https://github.com/losinglory/Glory/security/dependabot        
+remote: 
+To https://github.com/losinglory/Glory.git
+ + d577e68...904e7f9 main -> main (forced update)
+Pushed to GitHub: research: auto-sync 2026-06-30
+Finished: 13:52:13

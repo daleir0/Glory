@@ -1,0 +1,23 @@
+﻿=== Glory Research Agent: 2026-07-01 ===
+Started: 10:39:06
+Committed (`2f578c0d`).
+
+Researched **why LLM decode is memory-bandwidth-bound** ΓÇö the roofline ceiling `tokens/s Γëê VRAM_bandwidth ├╖ bytes-read-per-token`, verified against Glory's RTX 3060 (360 GB/s ΓåÆ ~80 tok/s ceiling for 7B Q4). It's the physical "why" tying together quantization, batching, speculative decoding, and MoE offloading. File: `Glory's Intellect/05 - Research/Hardware/2026-07-01-decode-memory-bandwidth-roofline.md`
+
+Sources: [LLM Inference Roofline survey](https://arxiv.org/html/2402.16363v4), [RTX 3060 12GB specs](https://www.techpowerup.com/gpu-specs/geforce-rtx-3060-12-gb.c3682)
+Exit code: 0
+git : remote: 
+At E:\Glory\scripts\push-to-github.ps1:36 char:19
++     $pushOutput = git -C $tmpDir push --force origin main 2>&1
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (remote: :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+remote: GitHub found 10 vulnerabilities on losinglory/Glory's default branch (3 high, 2 moderate, 5 low). To find out 
+more, visit:        
+remote:      https://github.com/losinglory/Glory/security/dependabot        
+remote: 
+To https://github.com/losinglory/Glory.git
+ + 904e7f9...79ca7ec main -> main (forced update)
+Pushed to GitHub: research: auto-sync 2026-07-01
+Finished: 10:47:01

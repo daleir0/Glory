@@ -1,0 +1,23 @@
+﻿=== Glory Research Agent: 2026-06-25 ===
+Started: 16:04:51
+Committed `c4e0132d`.
+
+Researched **prefix caching (SGLang RadixAttention + llama.cpp host-memory prompt caching)** ΓÇö reusing the KV cache of a fixed prompt prefix so Glory's repeated Contract/CLAUDE.md/memory preamble is prefilled once (~60sΓåÆ~200ms) instead of every turn ΓåÆ `E:\Glory\Glory's Intellect\05 - Research\AI\2026-06-25-prefix-caching-radixattention.md`
+
+Sources: [llama.cpp host-memory caching](https://github.com/ggml-org/llama.cpp/discussions/20574), [llama.cpp KV reuse](https://github.com/ggml-org/llama.cpp/discussions/13606), [LMSYS RadixAttention](https://www.lmsys.org/blog/2024-01-17-sglang/)
+Exit code: 0
+git : remote: 
+At E:\Glory\scripts\push-to-github.ps1:36 char:19
++     $pushOutput = git -C $tmpDir push --force origin main 2>&1
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (remote: :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+remote: GitHub found 10 vulnerabilities on losinglory/Glory's default branch (3 high, 2 moderate, 5 low). To find out 
+more, visit:        
+remote:      https://github.com/losinglory/Glory/security/dependabot        
+remote: 
+To https://github.com/losinglory/Glory.git
+ + b4364b4...6b67236 main -> main (forced update)
+Pushed to GitHub: research: auto-sync 2026-06-25
+Finished: 16:12:11

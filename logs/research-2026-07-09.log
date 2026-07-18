@@ -1,0 +1,21 @@
+﻿=== Glory Research Agent: 2026-07-09 ===
+Started: 20:23:00
+Committed as `b04b0147`.
+
+Researched **Top-n╧â sampling** (temperature-invariant token filtering in logit space; `threshold = max(logits) ΓêÆ n┬╖std(logits)`, `nΓëê1.0`, exposed in llama.cpp as `--top-n-sigma`) ΓåÆ `E:\Glory\Glory's Intellect\05 - Research\AI\2026-07-09-top-n-sigma-sampling.md`
+Exit code: 0
+git : remote: 
+At E:\Glory\scripts\push-to-github.ps1:36 char:19
++     $pushOutput = git -C $tmpDir push --force origin main 2>&1
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (remote: :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+remote: GitHub found 10 vulnerabilities on losinglory/Glory's default branch (3 high, 2 moderate, 5 low). To find out 
+more, visit:        
+remote:      https://github.com/losinglory/Glory/security/dependabot        
+remote: 
+To https://github.com/losinglory/Glory.git
+ + f715571...6e92b5a main -> main (forced update)
+Pushed to GitHub: research: auto-sync 2026-07-09
+Finished: 20:45:04

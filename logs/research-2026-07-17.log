@@ -1,0 +1,27 @@
+﻿=== Glory Research Agent: 2026-07-17 ===
+Started: 11:02:13
+Committed cleanly.
+
+Researched the **DRY (Don't Repeat Yourself) repetition sampler** ΓÇö a multi-token n-gram penalty (`penalty = multiplier ┬╖ base^(match_length ΓêÆ allowed_length)`) that surgically kills degenerate loops in llama.cpp without the coherence damage of classic `repetition_penalty`. Directly actionable on Glory's local stack via `--dry-multiplier 0.8`. Note: `E:\Glory\Glory's Intellect\05 - Research\AI\2026-07-17-dry-repetition-sampler.md` (commit `71842879`).
+
+Sources:
+- [llama.cpp server README](https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md)
+- [LLM Sampling Parameters Guide ΓÇö smcleod.net](https://smcleod.net/2025/04/llm-sampling-parameters-guide/)
+Exit code: 0
+git : remote: This repository moved. Please use the new location:        
+At E:\Glory\scripts\push-to-github.ps1:36 char:19
++     $pushOutput = git -C $tmpDir push --force origin main 2>&1
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (remote: This re...cation:        :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+remote:   https://github.com/daleir0/Glory.git        
+remote: 
+remote: GitHub found 10 vulnerabilities on daleir0/Glory's default branch (3 high, 2 moderate, 5 low). To find out 
+more, visit:        
+remote:      https://github.com/daleir0/Glory/security/dependabot        
+remote: 
+To https://github.com/losinglory/Glory.git
+ + bae293a...c40d418 main -> main (forced update)
+Pushed to GitHub: research: auto-sync 2026-07-17
+Finished: 11:11:32

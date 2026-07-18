@@ -1,0 +1,19 @@
+﻿=== Glory Research Agent: 2026-06-24 ===
+Started: 11:45:57
+Researched **importance-matrix (imatrix) quantization and the IQ/Dynamic-2.0 GGUF formats** ΓÇö the quality-vs-VRAM lever for Glory's local llama.cpp stack. Committed (915ab5a8) to `E:\Glory\Glory's Intellect\05 - Research\AI\2026-06-24-imatrix-iq-quantization-gguf.md`.
+Exit code: 0
+git : remote: 
+At E:\Glory\scripts\push-to-github.ps1:36 char:19
++     $pushOutput = git -C $tmpDir push --force origin main 2>&1
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (remote: :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+remote: GitHub found 10 vulnerabilities on losinglory/Glory's default branch (3 high, 2 moderate, 5 low). To find out 
+more, visit:        
+remote:      https://github.com/losinglory/Glory/security/dependabot        
+remote: 
+To https://github.com/losinglory/Glory.git
+ + b2ea074...b4364b4 main -> main (forced update)
+Pushed to GitHub: research: auto-sync 2026-06-24
+Finished: 11:57:01

@@ -1,0 +1,19 @@
+﻿=== Glory Research Agent: 2026-07-18 ===
+Started: 11:17:43
+Committed as `c8197746`.
+
+**Researched:** CUDA Graphs in llama.cpp ΓÇö how single-launch graph replay removes per-token host-side kernel dispatch overhead, and the runtime conditions that silently disable it. ΓåÆ `E:\Glory\Glory's Intellect\05 - Research\Hardware\2026-07-18-cuda-graphs-llama-cpp-launch-overhead.md`
+
+**Why this topic:** AI/ is saturated (39 notes covering sampling, KV-cache, and attention variants exhaustively). The unexplored gap was host-side scheduling cost ΓÇö the one decode bottleneck that isn't GPU-bound, and the one that Windows makes worse than the published H100 benchmarks suggest.
+
+The findings that actually change how we tune:
+
+- **MoE forfeits CUDA graphs entirely.** The `MUL_MAT_ID` expert-gather op disables graph capture, so Kimi K2 and any MoE GGUF eat the full eager-dispatch tax. Expert-placement tuning cannot fix this ΓÇö it's a separate, host-side overhead.
+- **Windows WDDM amplifies the loss.** WDDM serializes submissions per context; Linux submission is near-instantaneous. At ~2.3ΓÇô2.8 ┬╡s per launch across dozens of small decode kernels, the RTX 3060 pays a larger relative penalty than an H100 does.
+- **Graphs are a correctness suspect, not just a perf knob.** They've broken quantized K cache before ΓÇö `GGML_CUDA_DISABLE_GRAPHS=1` is now the first bisect step when a quantized-cache run outputs garbage.
+- **Speculative decoding's verify pass is batch>1**, so it's already running without graphs. Our recorded speculative wins are net of that loss, not additive to it.
+
+One thing I left alone deliberately: `Hardware/_INDEX.md` was missing the two July notes (`decode-memory-bandwidth-roofline`, `cuda-sysmem-fallback-policy`) before I touched it. I added only my own row rather than repairing pre-existing gaps ΓÇö flagging it since the index is drifting from the folder and will keep drifting.
+
+Sources: [NVIDIA ΓÇö Optimizing llama.cpp with CUDA Graphs](https://developer.nvidia.com/blog/optimizing-llama-cpp-ai-inference-with-cuda-graphs/) ┬╖ [llama.cpp #6763](https://github.com/ggml-org/llama.cpp/issues/6763) ┬╖ [llama.cpp #7492 ΓÇö graphs break quantized K cache](https://github.com/ggml-org/llama.cpp/issues/7492) ┬╖ [llama.cpp PR #7302](https://github.com/ggml-org/llama.cpp/pull/7302) ┬╖ [NVIDIA ΓÇö CUDA on WSL2 / WDDM submission model](https://developer.nvidia.com/blog/leveling-up-cuda-performance-on-wsl2-with-new-enhancements/)
+Exit code: 0

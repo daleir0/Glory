@@ -1,0 +1,21 @@
+﻿=== Glory Research Agent: 2026-07-10 ===
+Started: 06:00:05
+Committed cleanly (`c5ddb728`).
+
+Researched **prompt lookup (n-gram) decoding** ΓÇö draft-model-free speculative decoding that gives 2├ùΓÇô4├ù speedup on input-grounded/agentic workloads at ~0 VRAM cost, the one accelerator that fits atop a full model on the 12GB 3060 ΓåÆ `E:\Glory\Glory's Intellect\05 - Research\AI\2026-07-10-prompt-lookup-decoding-draft-free-speculative.md`
+Exit code: 0
+git : remote: 
+At E:\Glory\scripts\push-to-github.ps1:36 char:19
++     $pushOutput = git -C $tmpDir push --force origin main 2>&1
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (remote: :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+remote: GitHub found 10 vulnerabilities on losinglory/Glory's default branch (3 high, 2 moderate, 5 low). To find out 
+more, visit:        
+remote:      https://github.com/losinglory/Glory/security/dependabot        
+remote: 
+To https://github.com/losinglory/Glory.git
+ + 6e92b5a...c4b9714 main -> main (forced update)
+Pushed to GitHub: research: auto-sync 2026-07-10
+Finished: 06:09:18

@@ -1,0 +1,21 @@
+﻿=== Glory Research Agent: 2026-06-06 ===
+Started: 18:31:47
+Committed (b3ea3aff).
+
+Researched **YaRN context-window extension** (NTK-by-parts RoPE interpolation + attention temperature scaling ΓÇö extends Gemma/Qwen/Kimi past native context in llama.cpp with zero inference overhead, pairs with KV-cache quantization to fit the longer window on the 3060) ΓåÆ `Glory's Intellect/05 - Research/AI/2026-06-06-yarn-rope-context-extension.md`
+Exit code: 0
+git : remote: 
+At E:\Glory\scripts\push-to-github.ps1:36 char:19
++     $pushOutput = git -C $tmpDir push --force origin main 2>&1
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (remote: :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+remote: GitHub found 1 vulnerability on losinglory/Glory's default branch (1 moderate). To find out more, visit:       
+ 
+remote:      https://github.com/losinglory/Glory/security/dependabot/1        
+remote: 
+To https://github.com/losinglory/Glory.git
+ + 3845d43...32b74a4 main -> main (forced update)
+Pushed to GitHub: research: auto-sync 2026-06-06
+Finished: 18:40:29

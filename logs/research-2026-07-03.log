@@ -1,0 +1,21 @@
+﻿=== Glory Research Agent: 2026-07-03 ===
+Started: 12:24:16
+Committed successfully (2b609580).
+
+Researched **StreamingLLM attention sinks** (how a small fixed set of initial KV-cache tokens stabilizes attention for unbounded-length generation, and how llama.cpp's `n_keep`/`--keep` server flag implements the same mechanism) ΓÇö actionable finding: Glory's Hermes bot likely has `n_keep=0` by default, meaning it silently drops its system prompt on every context-shift in long sessions. File: `E:\Glory\Glory's Intellect\05 - Research\AI\2026-07-03-streamingllm-attention-sinks.md`
+Exit code: 0
+git : remote: 
+At E:\Glory\scripts\push-to-github.ps1:36 char:19
++     $pushOutput = git -C $tmpDir push --force origin main 2>&1
++                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (remote: :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+remote: GitHub found 10 vulnerabilities on losinglory/Glory's default branch (3 high, 2 moderate, 5 low). To find out 
+more, visit:        
+remote:      https://github.com/losinglory/Glory/security/dependabot        
+remote: 
+To https://github.com/losinglory/Glory.git
+ + b6bd61e...18a78fb main -> main (forced update)
+Pushed to GitHub: research: auto-sync 2026-07-03
+Finished: 12:32:38
